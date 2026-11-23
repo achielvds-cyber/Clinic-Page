@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>title</title>
+  <script src="script.js" defer></script>
+  <Header><h1> Cycle’s Saturday repair clinic <h1>
+    <nav> 
+    <ul>
+      <li><a href="#Info">Information</a></li> 
+      <li><a href="#Price list">Price list</a></li>
+      <li><a href="#booking">Book a slot</a></li>
+      <li><a href="#service">Estimated price</a></li>
+    </ul>
+  </nav>
+  <h3> Top-quality service and fast repairs to keep your bike riding smoothly </h3> </Header>
+
+</head>
+<body>
+ <img src="images/bicycle.png" alt="Een fiets">
+  <main>
+    <h2 class="Info" id="Info">Information</h2>
+    <h3>When and where</h3>
+    <li> Saturday 15:00 to 17:00 </li>
+    <li> Workshop B, Student Centre </li>
+    <h2 class="Price list"
+    id="Price list">Price list</h2>
+     <section id="prices" aria-labelledby="prices-h">
+      <h3 id="prices-h">Prices</h3>
+      <ul class="prices">
+        <li><span></small></span><strong>EUR 10</strong><span> A bicycle check</li>
+        <li></small></span><strong>EUR 5</strong> A small repair</li>
+        <li></small></span><strong>EUR 45</strong> The full service</li>
+    <section id="book">
+  <h2>Book a slot</h2>
+  <form id="booking">
+    <label for="name">Your name</label>
+    <input id="name" name="name" type="text" required>
+
+    <label for="slot">Time slot</label>
+    <select id="slot" name="slot" required>
+      <option>15:00</option>
+      <option>15:30</option>
+      <option>16:00</option>
+      <option>16:30</option>
+    </select>
+
+    <button type="submit">Book this slot</button>
+  </form>
+  <p id="message" role="status"></p>
+</section>
+<h3>Estimate your price</h3>
+<label for="service">Service</label>
+<select id="service">
+  <option value="10">A check</option>
+  <option value="45">A full service</option>
+</select>
+
+<label for="repairs">Number of small repairs</label>
+<input id="repairs" type="number" min="0" step="1" value="0">
+
+<p>Your estimate: <output id="total">EUR 10</output></p>
+    </select>
+    <footer>
+  <p>Campus Cycle · Personal code: BW-LTYR</p>
+</footer>
+  </main>
+</body>
+</html>
